@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Partida</title>
+    <style></style>
+ </head>
+ <script>
+    function result(x,y){
+        window.location.href = "result.html"
+    }
+    function menu(){
+        window.location.href = "index.html"
+    }
+    function pedra(){
+        var x = 1
+        var y =Math.floor(Math.random() * 3) + 1;
+        if(x==y){
+            alert("Empate!!!, Voce escolheu pedra e a maquina tambem");
+        }else if(x==1||y==2){
+            alert("Voce Perdeu !!!, Voce escolheu pedra e a maquina escolheu papel");
+        }else{
+            alert("Voce Venceu!!!, Voce escolheu pedra e a maquina tesoura");
+        }
+    }
+    function papel(){
+        var x = 2
+        var y =Math.floor(Math.random() * 3) + 1;
+        if(x==y){
+            result(x,y)
+            
+        }else if(x==2||y==1){
+            alert("Voce Venceu");
+        }else{
+            alert("Voce Perdeu");
+        }
+    }
+    function tesoura(){
+        var x = 1
+        var y =Math.floor(Math.random() * 3) + 1;
+        if(x==y){
+            alert("Empate");
+        }else if(x==3||y==2){
+            alert("Voce Venceu");
+        }else{
+            alert("Voce Perdeu");
+        }
+    }
+</script>
+ <body>
+    <body>
+        Escolha Pedra,Papel ou Tesoura
+    <div id = escolha>
+            <input type="image" src="C:\Users\rique\Pictures\pedra.png" name="submit" width="65" height="48"  onclick="pedra()"/>
+            <input type="image" src="C:\Users\rique\Pictures\papel.png" name="submit" width="65" height="48"  onclick="papel()"/>
+            <input type="image" src="C:\Users\rique\Pictures\tesoura.png" name="submit" width="65" height="48"  onclick="tesou()"/>
+
+    </div>
+    </body>
+    <script>
+    
+    div
+    </script>
+     <div id = idPessoa>
+            <input type="button" value="Deu certo" onclick="menu()"><br>
+     </div>
+     <br><br>
+     <div id="jogar">
+
+     </div>
+ </body>
+</html>
